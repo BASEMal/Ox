@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>مستشفى آزال</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .header { background-color: #130457; color: white; padding: 20px; text-align: center; }
+        .header img { width: 50px; height: 50px; vertical-align: middle; }
+        .header h1 { display: inline-block; margin: 0; }
+        .welcome { background-color: #130457; color: white; text-align: center; padding: 15px 0; }
+        .main { padding: 20px; text-align: center; }
+        .section img { width: 100%; height: auto; margin-bottom: 20px; }
+        .collapsible { background-color: #130457; color: white; cursor: pointer; padding: 10px; text-align: left; border: none; outline: none; width: 100%; }
+        .collapsible:after { content: '\002B'; float: right; }
+        .collapsible.active:after { content: "\2212"; }
+        .content { padding: 0 18px; display: none; overflow: hidden; background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="IMG-20241018-WA0043.jpg" alt="2.jpg ">
+    <h1>مستشفى آزال</h1>
+</div>
+
+<div class="welcome">
+    <h2>مرحبًا بكم في مستشفى آزال</h2>
+</div>
+
+<div class="main">
+    <img src="IMG-20241018-WA0044.jpg" alt="1.jpg ">
+</div>
+
+<div class="section">
+    <button type="button" class="collapsible">الخدمات</button>
+    <div class="content">
+        <p>نقدم مجموعة متنوعة من الخدمات الطبية بما في ذلك:</p>
+        <ul>
+            <li>الطب العام</li>
+            <li>جراحة القلب</li>
+            <li>الأشعة والتصوير الطبي</li>
+            <li>الطب النفسي</li>
+            <li>العلاج الطبيعي</li>
+        </ul>
+    </div>
+</div>
+
+<div class="section">
+    <button type="button" class="collapsible">العنوان</button>
+    <div class="content">
+        <p>صنعاء-مذبح-بعد جسر مذبح</p>
+    </div>
+</div>
+
+<div class="section">
+    <button type="button" class="collapsible">اوقات العمل</button>
+    <div class="content">
+        <p> مفتوح علي مدار الساعه</p>
+    </div>
+</div>
+<div class="section">
+    <button type="button" class="collapsible"> تواصل معنا</button>
+    <div class="content">
+        <p> الهاتف:000 002 1 769</p>
+    </div>
+</div>
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+<marquee>
+    <p class="c4">تصميم ألمهندس / حمزه النجار</p>
+    <p class="c5">ت/779449008</p>
+
+</marquee>
+
+</body>
+</html>
